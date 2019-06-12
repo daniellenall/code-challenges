@@ -1,1 +1,2 @@
-# Various projects/code challenges
+# Various projects
+From different code challenges
