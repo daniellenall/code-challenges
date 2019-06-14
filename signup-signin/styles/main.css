@@ -9,11 +9,16 @@ article, aside, canvas, details, embed, figure, figcaption, footer, header, hgro
 }
 
 body {
-    background-image: radial-gradient(#1E1E1E, #000000);
-    justify-content: center;
-    display: flex;
+    background-image: linear-gradient(45deg, #f988ff, #5aefff);
+    background-size: cover;
     margin -20px 0 50px
+    height:100vh;
 
+}
+.wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .container {
@@ -22,20 +27,19 @@ body {
     max-width: 100%;
     min-height: 450px;
     position: relative;
-    border-radius: 5px;
+    border-radius: 2px;
     overflow: hidden;
     background-color: rgba(255,255,255,100%)
 
 }
 
 .overlay-container {
- width: 50%;
- position: absolute;
- top: 0;
- left: 50%;
- height: 100%;
- overflow: hidden;
-
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .overlay {
