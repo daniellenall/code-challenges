@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,500&display=swap');
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -13,8 +15,32 @@ body {
     background-size: cover;
     margin -20px 0 50px
     height:100vh;
+    font-family: Lato;
 
 }
+
+form {
+    display: flex;
+}
+
+form > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 100;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+form > a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 36px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
 .wrapper{
     height: 100vh;
     display: flex;
@@ -25,12 +51,85 @@ body {
     margin:0 auto;
     width: 800px;
     max-width: 100%;
-    min-height: 450px;
+    min-height: 350px;
     position: relative;
-    border-radius: 2px;
+    border-radius: 5px;
     overflow: hidden;
-    background-color: rgba(255,255,255,100%)
+    background-color: rgba(255,255,255,75%);
 
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F1F1F;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container input {
+    margin: 5px 15px;
+    width: 100%;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    z-index: 1;
+    opacity: 0;
+}
+
+input {
+    background-color: rgba(255,255,255,5%);
+    color: #FFFFFF;
+    border: none;
+    padding: 5px;
+    outline: none;
+    line-height: 35px;
+    text-align: center;
+}
+
+input:focus {
+    padding-bottom: 3px;
+    border-bottom: 2px #E1E1E1 solid;
+    transition: border-bottom 1s ease-in-out;
+}
+
+::placeholder {
+    color: rgba(255,255,255,50%);
+    font-weight: 500;
+}
+
+button {
+    background-color: #BCB2FF;
+    color: #FFFFFF;
+    border-radius: 50px;
+    border: 0;
+    font-size: 16px;
+    padding: 5px 10px;
+    min-width: 100px;
+    text-align: center;
+    outline: none;
+    text-transform: uppercase;
+}
+
+button:active {
+    transform: scale(-20%);
 }
 
 .overlay-container {
